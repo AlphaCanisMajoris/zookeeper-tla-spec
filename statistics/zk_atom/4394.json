@@ -1,0 +1,4597 @@
+[
+  {
+    "version": "zk_atom",
+    "server_num": 3,
+    "server_id": [
+      "s2",
+      "s1",
+      "s0"
+    ]
+  },
+  {
+    "Step": 1,
+    "ElectionAndDiscovery": {
+      "nodeId": "s2",
+      "peerId": [
+        "s1",
+        "s0"
+      ],
+      "coreParam": [
+        0,
+        {
+          "zxid": [
+            0,
+            0
+          ],
+          "index": 0
+        },
+        1
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          }
+        },
+        "forwarding": {
+          "s2": [],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "SYNCHRONIZATION",
+          "s1": "SYNCHRONIZATION",
+          "s0": "SYNCHRONIZATION"
+        },
+        "lastProcessed": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            0
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 0
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "SHUTDOWN",
+          "s1": "SHUTDOWN",
+          "s0": "SHUTDOWN"
+        }
+      }
+    }
+  },
+  {
+    "Step": 2,
+    "LeaderSyncFollower": {
+      "nodeId": "s2",
+      "peerId": "s0",
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "SYNCHRONIZATION",
+          "s1": "SYNCHRONIZATION",
+          "s0": "SYNCHRONIZATION"
+        },
+        "lastProcessed": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            0
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 0
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "SHUTDOWN",
+          "s1": "SHUTDOWN",
+          "s0": "SHUTDOWN"
+        }
+      }
+    }
+  },
+  {
+    "Step": 3,
+    "FollowerProcessSyncMessage": {
+      "nodeId": "s0",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          0,
+          0
+        ],
+        "DIFF"
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "DIFF",
+            "nlRcv": false
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "SYNCHRONIZATION",
+          "s1": "SYNCHRONIZATION",
+          "s0": "SYNCHRONIZATION"
+        },
+        "lastProcessed": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            0
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 0
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "SHUTDOWN",
+          "s1": "SHUTDOWN",
+          "s0": "SHUTDOWN"
+        }
+      }
+    }
+  },
+  {
+    "Step": 4,
+    "FollowerUpdateCurrentEpoch": {
+      "nodeId": "s0",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          1,
+          0
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "SYNCHRONIZATION",
+          "s1": "SYNCHRONIZATION",
+          "s0": "SYNCHRONIZATION"
+        },
+        "lastProcessed": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            0
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "SHUTDOWN",
+          "s1": "SHUTDOWN",
+          "s0": "INITIAL"
+        }
+      }
+    }
+  },
+  {
+    "Step": 5,
+    "FollowerProcessNEWLEADERAfterCurrentEpochUpdated": {
+      "nodeId": "s0",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          1,
+          0
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "SYNCHRONIZATION",
+          "s1": "SYNCHRONIZATION",
+          "s0": "SYNCHRONIZATION"
+        },
+        "lastProcessed": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            0
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "SHUTDOWN",
+          "s1": "SHUTDOWN",
+          "s0": "INITIAL"
+        }
+      }
+    }
+  },
+  {
+    "Step": 6,
+    "LeaderProcessACK": {
+      "nodeId": "s2",
+      "peerId": "s0",
+      "coreParam": [
+        [
+          1,
+          0
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "SYNCHRONIZATION"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            0
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "SHUTDOWN",
+          "s0": "INITIAL"
+        }
+      }
+    }
+  },
+  {
+    "Step": 7,
+    "FollowerProcessUPTODATE": {
+      "nodeId": "s0",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          1,
+          0
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            0
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "SHUTDOWN",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 8,
+    "LeaderProcessACK": {
+      "nodeId": "s2",
+      "peerId": "s0",
+      "coreParam": [
+        [
+          1,
+          0
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            0
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "SHUTDOWN",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 9,
+    "LeaderProcessRequest": {
+      "nodeId": "s2",
+      "coreParam": [
+        [
+          1,
+          1
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [
+                "s2"
+              ],
+              "epoch": 1
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                0,
+                0
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            1
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "SHUTDOWN",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 10,
+    "LeaderSyncFollower": {
+      "nodeId": "s2",
+      "peerId": "s1",
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [
+                "s2"
+              ],
+              "epoch": 1
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            1
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "SHUTDOWN",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 11,
+    "FollowerProcessSyncMessage": {
+      "nodeId": "s1",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          1,
+          0
+        ],
+        "SNAP"
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "SNAP",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [
+                "s2"
+              ],
+              "epoch": 1
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            1
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "SHUTDOWN",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 12,
+    "FollowerProcessPROPOSALInSync": {
+      "nodeId": "s1",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          1,
+          1
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "SNAP",
+            "nlRcv": false
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [
+                "s2"
+              ],
+              "epoch": 1
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            1
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 0,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [
+              {
+                "zxid": [
+                  1,
+                  1
+                ],
+                "value": 0,
+                "ackSid": [],
+                "epoch": 1
+              }
+            ],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "SHUTDOWN",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 13,
+    "FollowerUpdateCurrentEpoch": {
+      "nodeId": "s1",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          1,
+          0
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [
+                "s2"
+              ],
+              "epoch": 1
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            1
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [
+              {
+                "zxid": [
+                  1,
+                  1
+                ],
+                "value": 0,
+                "ackSid": [],
+                "epoch": 1
+              }
+            ],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "INITIAL",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 14,
+    "FollowerProcessNEWLEADERAfterCurrentEpochUpdated": {
+      "nodeId": "s1",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          1,
+          0
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [
+                "s2"
+              ],
+              "epoch": 1
+            }
+          ],
+          "s1": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [],
+              "epoch": 1
+            }
+          ],
+          "s0": []
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            1
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "INITIAL",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 15,
+    "FollowerProcessPROPOSAL": {
+      "nodeId": "s0",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          1,
+          1
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [
+                "s2"
+              ],
+              "epoch": 1
+            }
+          ],
+          "s1": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [],
+              "epoch": 1
+            }
+          ],
+          "s0": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [],
+              "epoch": 1
+            }
+          ]
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s1": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            1
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "INITIAL",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 16,
+    "LeaderProcessACK": {
+      "nodeId": "s2",
+      "peerId": "s0",
+      "coreParam": [
+        [
+          1,
+          1
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [
+                "s2",
+                "s0"
+              ],
+              "epoch": 1
+            }
+          ],
+          "s1": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [],
+              "epoch": 1
+            }
+          ],
+          "s0": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [],
+              "epoch": 1
+            }
+          ]
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 1,
+            "zxid": [
+              1,
+              1
+            ]
+          },
+          "s1": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            1
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "index": 1,
+            "zxid": [
+              1,
+              1
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "INITIAL",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  },
+  {
+    "Step": 17,
+    "FollowerProcessCOMMITInSync_refined": {
+      "nodeId": "s1",
+      "peerId": "s2",
+      "coreParam": [
+        [
+          1,
+          1
+        ]
+      ],
+      "variables": {
+        "connectInfo": {
+          "s2": {
+            "nlRcv": false,
+            "syncMode": "NONE",
+            "sid": "NullPoint"
+          },
+          "s1": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          },
+          "s0": {
+            "sid": "s2",
+            "syncMode": "NONE",
+            "nlRcv": true
+          }
+        },
+        "forwarding": {
+          "s2": [
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "history": {
+          "s2": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [
+                "s2",
+                "s0"
+              ],
+              "epoch": 1
+            }
+          ],
+          "s1": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [],
+              "epoch": 1
+            }
+          ],
+          "s0": [
+            {
+              "zxid": [
+                1,
+                1
+              ],
+              "value": 0,
+              "ackSid": [],
+              "epoch": 1
+            }
+          ]
+        },
+        "electing": {
+          "s2": [
+            {
+              "sid": "s2",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s1",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            },
+            {
+              "sid": "s0",
+              "peerLastZxid": [
+                -1,
+                -1
+              ],
+              "inQuorum": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "zabState": {
+          "s2": "BROADCAST",
+          "s1": "SYNCHRONIZATION",
+          "s0": "BROADCAST"
+        },
+        "lastProcessed": {
+          "s2": {
+            "index": 1,
+            "zxid": [
+              1,
+              1
+            ]
+          },
+          "s1": {
+            "index": 0,
+            "zxid": [
+              1,
+              0
+            ]
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "acceptedEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "connecting": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s1",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "hzxid": {
+          "s2": [
+            1,
+            1
+          ],
+          "s1": [
+            0,
+            0
+          ],
+          "s0": [
+            0,
+            0
+          ]
+        },
+        "lastCommitted": {
+          "s2": {
+            "index": 1,
+            "zxid": [
+              1,
+              1
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          }
+        },
+        "currentEpoch": {
+          "s2": 1,
+          "s1": 1,
+          "s0": 1
+        },
+        "learners": {
+          "s2": [
+            "s2",
+            "s1",
+            "s0"
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "lastSnapshot": {
+          "s2": {
+            "index": 0,
+            "zxid": [
+              0,
+              0
+            ]
+          },
+          "s1": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          },
+          "s0": {
+            "zxid": [
+              0,
+              0
+            ],
+            "index": 0
+          }
+        },
+        "status": {
+          "s2": "ONLINE",
+          "s1": "ONLINE",
+          "s0": "ONLINE"
+        },
+        "state": {
+          "s2": "LEADING",
+          "s1": "FOLLOWING",
+          "s0": "FOLLOWING"
+        },
+        "partition": {
+          "s2": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s1": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          },
+          "s0": {
+            "s2": false,
+            "s1": false,
+            "s0": false
+          }
+        },
+        "packetsSync": {
+          "s2": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s1": {
+            "notCommitted": [],
+            "committed": []
+          },
+          "s0": {
+            "notCommitted": [],
+            "committed": []
+          }
+        },
+        "ackldRecv": {
+          "s2": [
+            {
+              "sid": "s2",
+              "connected": true
+            },
+            {
+              "sid": "s0",
+              "connected": true
+            }
+          ],
+          "s1": [],
+          "s0": []
+        },
+        "servingState": {
+          "s2": "RUNNING",
+          "s1": "INITIAL",
+          "s0": "RUNNING"
+        }
+      }
+    }
+  }
+]
