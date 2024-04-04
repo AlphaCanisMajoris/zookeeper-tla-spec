@@ -1,0 +1,24 @@
+#Servers,#Requests,#Crashes,#Partitions,Checking Mode,Diameter,States Found,Distinct States,Duration,Exit Status,Warnings,Errors
+2,2,2,0,BFS,39,14496,11300,00:00:04,Completed,0,0
+2,2,0,2,BFS,39,19284,13796,00:00:04,Completed,0,0
+2,2,1,1,BFS,39,19773,14403,00:00:04,Completed,0,0
+2,2,3,3,BFS,72,84119959,48404445,03:04:16,Completed,0,0
+2,3,2,2,BFS,62,5948313,3720729,00:05:37,Completed,0,0
+3,2,1,0,BFS,43,394524,159502,00:00:46,Completed,0,0
+3,2,0,1,BFS,51,1453916,645233,00:01:57,Completed,0,0
+3,2,2,0,BFS,54,17096433,7091514,00:20:09,Completed,0,0
+3,2,0,2,BFS,70,220459167,99783994,04:18:18,Completed,0,0
+3,2,1,1,BFS,62,64444503,28668647,01:12:41,Completed,0,0
+3,2,2,1,BFS,73,2199118599,979941557,22:46:54,Completed,0,0
+3,2,1,2,BFS,54,3141981822,1505342072,>24:00:00,Time exceeded,0,0
+3,2,3,3,Sampling,-,555542594,-,>24:00:00,Time exceeded,0,0
+3,3,2,2,Sampling,-,447162379,-,>24:00:00,Time exceeded,0,0
+4,2,1,0,BFS,66,14914257,4582749,00:59:19,Completed,0,0
+4,2,0,1,BFS,74,82156494,28738305,06:05:17,Completed,0,0
+4,2,3,3,Sampling,-,461425663,-,>24:00:00,Time exceeded,0,0
+4,3,2,2,Sampling,-,383991933,-,>24:00:00,Time exceeded,0,0
+5,2,3,3,Sampling,-,354465065,-,>24:00:00,Time exceeded,0,0
+5,3,2,2,Sampling,-,291014750,-,>24:00:00,Time exceeded,0,0
+,,,,,,,,,,,
+TLA+ Toolbox version: v1.7.0 ,,,,,,,,,,,
+,,,,,,,,,,,
